@@ -6,7 +6,7 @@
 
 This repo holds the pytorch implementation of DoDNet:<br />
 
-**Paper: DoDNet: Learning to segment multi-organ and tumors from multiple partially labeled datasets.** 
+**DoDNet: Learning to segment multi-organ and tumors from multiple partially labeled datasets.** 
 (https://arxiv.org/pdf/2011.10217.pdf)
 
 ## Requirements

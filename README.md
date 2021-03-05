@@ -19,7 +19,7 @@ Apex==0.1<br />
 ### 0. Installation
 * Clone this repo
 ```
-git clone https://github.com/jianpengz/ConResNet.git
+git clone https://github.com/jianpengz/DoDNet.git
 cd DoDNet
 ```
 ### 1. MOTS Dataset Preparation

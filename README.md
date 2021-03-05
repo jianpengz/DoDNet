@@ -38,7 +38,10 @@ Spleen | [data](http://medicaldecathlon.com/)
 * Download and put these datasets in `dataset/0123456/`. 
 * Re-spacing the data by `python re_spacing.py', the re-spaced data will be saved in `0123456_spacing_same/'
 
-### 2. Training
+### 2. Model
+Pretrained model is available in [checkpoint](https://drive.google.com/file/d/1qj8dJ_G1sHiCmJx_IQjACQhjUQnb4flg/view?usp=sharing)
+
+### 3. Training
 * cd `a_DynConv/' and run 
 ```
 CUDA_VISIBLE_DEVICES=0,1 python -m torch.distributed.launch --nproc_per_node=2 --master_port=$RANDOM train_Dynconv.py \
@@ -58,7 +61,7 @@ CUDA_VISIBLE_DEVICES=0,1 python -m torch.distributed.launch --nproc_per_node=2 -
 --FP16=False
 ```
 
-### 3. Evaluation
+### 4. Evaluation
 ```
 CUDA_VISIBLE_DEVICES=0 python evaluate_Dynconv.py \
 --val_list='list/MOTS/MOTS_test.txt' \
@@ -71,12 +74,12 @@ CUDA_VISIBLE_DEVICES=0 python evaluate_Dynconv.py \
 --num_workers=2
 ```
 
-### 4. Post-processing
+### 5. Post-processing
 ```
 python postp.py --img_folder_path='outputs/dodnet/'
 ```
 
-### 5. Citation
+### 6. Citation
 If this code is helpful for your study, please cite:
 ```
 @inproceedings{zhang2020dodnet,

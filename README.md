@@ -36,7 +36,7 @@ Lung | [data](http://medicaldecathlon.com/)
 Spleen | [data](http://medicaldecathlon.com/)
 
 * Download and put these datasets in `dataset/0123456/`. 
-* Re-spacing the data by `python re_spacing.py', the re-spaced data will be saved in `0123456_spacing_same/'
+* Re-spacing the data by `python re_spacing.py', the re-spaced data will be saved in `0123456_spacing_same/`.
 
 ### 2. Model
 Pretrained model is available in [checkpoint](https://drive.google.com/file/d/1qj8dJ_G1sHiCmJx_IQjACQhjUQnb4flg/view?usp=sharing)

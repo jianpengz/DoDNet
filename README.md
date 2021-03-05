@@ -1,6 +1,6 @@
 # DoDNet
 <p align="left">
-    <img src="dodnet.png" width="85%" height="85%">
+    <img src="a_DynConv/dodnet.png" width="85%" height="85%">
 </p>
 
 

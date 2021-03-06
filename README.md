@@ -84,7 +84,7 @@ If this code is helpful for your study, please cite:
 ```
 @inproceedings{zhang2021dodnet,
   title={DoDNet: Learning to segment multi-organ and tumors from multiple partially labeled datasets},
-  author={Zhang, Jianpeng and Xie, Yutong and Shen, Chunhua and Xia, Yong},
+  author={Zhang, Jianpeng and Xie, Yutong and Xia, Yong and Shen, Chunhua},
   booktitle={Proceedings of the IEEE conference on computer vision and pattern recognition},
   pages={},
   year={2021}

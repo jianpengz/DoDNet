@@ -28,7 +28,7 @@ Before starting, MOTS should be re-built from the serveral medical organ and tum
 Partial-label task | Data source
 --- | :---:
 Liver | [data](https://competitions.codalab.org/competitions/17094)
-Kidney | [data](http://medicaldecathlon.com/)
+Kidney | [data](https://kits19.grand-challenge.org/data/)
 Hepatic Vessel | [data](http://medicaldecathlon.com/)
 Pancreas | [data](http://medicaldecathlon.com/)
 Colon | [data](http://medicaldecathlon.com/)

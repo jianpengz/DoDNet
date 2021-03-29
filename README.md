@@ -60,7 +60,7 @@ Pretrained model is available in [checkpoint](https://drive.google.com/file/d/1q
 ### 3. Training
 * cd `a_DynConv/' and run 
 ```
-CUDA_VISIBLE_DEVICES=0,1 python -m torch.distributed.launch --nproc_per_node=2 --master_port=$RANDOM train_Dynconv.py \
+CUDA_VISIBLE_DEVICES=0,1 python -m torch.distributed.launch --nproc_per_node=2 --master_port=$RANDOM train.py \
 --train_list='list/MOTS/MOTS_train.txt' \
 --snapshot_dir='snapshots/dodnet' \
 --input_size='64,192,192' \
@@ -79,7 +79,7 @@ CUDA_VISIBLE_DEVICES=0,1 python -m torch.distributed.launch --nproc_per_node=2 -
 
 ### 4. Evaluation
 ```
-CUDA_VISIBLE_DEVICES=0 python evaluate_Dynconv.py \
+CUDA_VISIBLE_DEVICES=0 python evaluate.py \
 --val_list='list/MOTS/MOTS_test.txt' \
 --reload_from_checkpoint=True \
 --reload_path='snapshots/dodnet/MOTS_DynConv_checkpoint.pth' \

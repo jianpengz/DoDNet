@@ -12,7 +12,8 @@ This repo holds the pytorch implementation of DoDNet:<br />
 ## Requirements
 Python 3.7<br />
 PyTorch==1.4.0<br />
-Apex==0.1<br />
+[Apex==0.1](https://github.com/NVIDIA/apex)<br />
+[batchgenerators](https://github.com/MIC-DKFZ/batchgenerators)<br />
 
 ## Usage
 

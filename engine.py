@@ -7,7 +7,7 @@ import torch
 import torch.distributed as dist
 
 from utils.logger import get_logger
-from utils.pyt_utils import parse_devices, all_reduce_tensor, extant_file
+from utils.pyt_utils import all_reduce_tensor, extant_file
 
 try:
     from apex.parallel import DistributedDataParallel, SyncBatchNorm

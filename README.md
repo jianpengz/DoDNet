@@ -4,7 +4,7 @@
 </p>
 
 
-This repo holds the pytorch implementation of DoDNet:<br />
+This repo holds the pytorch implementation of DoDNet and TransDoDNet:<br />
 
 **DoDNet: Learning to segment multi-organ and tumors from multiple partially labeled datasets** 
 (https://arxiv.org/pdf/2011.10217.pdf) \

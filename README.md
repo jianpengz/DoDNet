@@ -6,23 +6,31 @@
 
 This repo holds the pytorch implementation of DoDNet:<br />
 
-**DoDNet: Learning to segment multi-organ and tumors from multiple partially labeled datasets.** 
-(https://arxiv.org/pdf/2011.10217.pdf)
+**DoDNet: Learning to segment multi-organ and tumors from multiple partially labeled datasets** 
+(https://arxiv.org/pdf/2011.10217.pdf) \
+**Learning from partially labeled data for multi-organ and tumor segmentation** 
+(https://arxiv.org/pdf/2211.06894.pdf)
 
-## Requirements
+<!-- ## Requirements
 Python 3.7<br />
 PyTorch==1.4.0<br />
+<<<<<<< HEAD
 [Apex==0.1](https://github.com/NVIDIA/apex)<br />
 [batchgenerators](https://github.com/MIC-DKFZ/batchgenerators)<br />
+=======
+Apex==0.1<br /> -->
+>>>>>>> Add TransDoD
 
 ## Usage
 
-### 0. Installation
+
+<!--### 0. Installation
 * Clone this repo
 ```
 git clone https://github.com/jianpengz/DoDNet.git
-cd DoDNet
 ```
+-->
+
 ### 1. MOTS Dataset Preparation
 Before starting, MOTS should be re-built from the serveral medical organ and tumor segmentation datasets
 
@@ -36,7 +44,7 @@ Colon | [data](http://medicaldecathlon.com/)
 Lung | [data](http://medicaldecathlon.com/)
 Spleen | [data](http://medicaldecathlon.com/)
 
-* Download and put these datasets in `dataset/0123456/`. 
+<!-- * Download and put these datasets in `dataset/0123456/`. 
 * Re-spacing the data by `python re_spacing.py`, the re-spaced data will be saved in `0123456_spacing_same/`.
 
 The folder structure of dataset should be like
@@ -52,10 +60,14 @@ The folder structure of dataset should be like
     |        ├── liver_1.nii.gz
     |        ├── ...
     ├── 1Kidney
-    ├── ...
+    ├── ... -->
+* Preprocessed data will be available soon.
+
+### 2. Training/Testing/Evaluation
+sh run_script.sh
 
 
-### 2. Model
+<!-- ### 2. Model
 Pretrained model is available in [checkpoint](https://drive.google.com/file/d/1qj8dJ_G1sHiCmJx_IQjACQhjUQnb4flg/view?usp=sharing)
 
 ### 3. Training
@@ -94,9 +106,10 @@ CUDA_VISIBLE_DEVICES=0 python evaluate.py \
 ### 5. Post-processing
 ```
 python postp.py --img_folder_path='outputs/dodnet/'
-```
+``` -->
 
-### 6. Citation
+
+### 3. Citation
 If this code is helpful for your study, please cite:
 ```
 @inproceedings{zhang2021dodnet,
@@ -106,8 +119,10 @@ If this code is helpful for your study, please cite:
   pages={},
   year={2021}
 }
+@article{xie2022learning,
+  title={Learning from partially labeled data for multi-organ and tumor segmentation},
+  author={Xie, Yutong and Zhang, Jianpeng and Xia, Yong and Shen, Chunhua},
+  journal={arXiv preprint arXiv:2211.06894},
+  year={2022}
+}
 ```
-
-
-### Contact
-Jianpeng Zhang (james.zhang@mail.nwpu.edu.cn)

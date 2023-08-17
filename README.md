@@ -19,7 +19,6 @@ PyTorch==1.4.0<br />
 [batchgenerators](https://github.com/MIC-DKFZ/batchgenerators)<br />
 =======
 Apex==0.1<br /> -->
->>>>>>> Add TransDoD
 
 ## Usage
 

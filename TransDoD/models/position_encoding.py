@@ -2,12 +2,13 @@
 """
 Various positional encodings for the transformer.
 """
+import sys
+sys.path.append("../../utils/")
+
 import math
 import torch
 from torch import nn
-
 from utils.misc import NestedTensor
-
 
 class PositionEmbeddingSine(nn.Module):
     """

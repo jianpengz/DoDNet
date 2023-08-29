@@ -9,7 +9,7 @@ import numpy as np
 import torch.backends.cudnn as cudnn
 from scipy.ndimage.filters import gaussian_filter
 from tqdm import tqdm
-from models.TransDoDNet import MOTS_DeformTR as MOTS_model
+from models.TransDoDNet import TransDoDNet as MOTS_model
 from MOTSDataset import MOTSTestDataSet, my_collate
 import timeit
 from utils.ParaFlop import print_model_parm_nums

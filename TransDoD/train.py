@@ -9,17 +9,18 @@ import torch.backends.cudnn as cudnn
 import time
 
 import os.path as osp
-from models.TransDoDNet import MOTS_DeformTR as MOTS_model
+from models.TransDoDNet import TransDoDNet as MOTS_model
 from MOTSDataset import MOTSTrainDataSet, my_collate
 import random
 import timeit
 from loss_functions import loss
 from utils.ParaFlop import print_model_parm_nums
-import utils.utils as utils
+import utils.my_utils as utils
 from math import ceil
 from engine import Engine
 from apex import amp
 import logging
+from tqdm import tqdm
 
 start = timeit.default_timer()
 

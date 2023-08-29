@@ -118,10 +118,10 @@ If this code is helpful for your study, please cite:
   pages={},
   year={2021}
 }
-@article{xie2022learning,
+@article{xie2023learning,
   title={Learning from partially labeled data for multi-organ and tumor segmentation},
   author={Xie, Yutong and Zhang, Jianpeng and Xia, Yong and Shen, Chunhua},
-  journal={arXiv preprint arXiv:2211.06894},
-  year={2022}
+  journal={IEEE Transactions on Pattern Analysis and Machine Intelligence},
+  year={2023}
 }
 ```

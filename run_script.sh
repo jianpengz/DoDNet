@@ -12,7 +12,6 @@ CUDA_VISIBLE_DEVICES=0,1 python -m torch.distributed.launch --nproc_per_node=2 t
 --num_epochs=1000
 
 # Testing
-cd TransDoD/
 CUDA_VISIBLE_DEVICES=0 python test.py \
 --val_list='MOTS/MOTS_test.txt' \
 --nnUNet_preprocessed='/path/to/nnUNet_preprocessed' \

@@ -82,7 +82,7 @@ for root1, dirs1, _ in os.walk(ori_path):
                                 saveITK.SetOrigin(ori_origin)
                                 saveITK.SetDirection(ori_direction)
                                 sitk.WriteImage(saveITK, os.path.join(save_path, i_files4))
-
+            continue
         #############################################################################
         for root2, dirs2, files2 in os.walk(os.path.join(root1, i_dirs1)):
             for i_dirs2 in sorted(dirs2):  # imagesTr
